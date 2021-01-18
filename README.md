@@ -24,7 +24,7 @@
 - React Router for navigation
 - SASS for styling
 - Lottie for loading gif
-- Sing In page photo from Unsplash
+- Sign In page photo from Unsplash
 - React Testing Library and Jest for testing
 
 ### Time Spent on Project
