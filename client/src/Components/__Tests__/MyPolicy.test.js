@@ -1,11 +1,5 @@
 import MyPolicy from '../MyPolicy';
-import {
-    render,
-    cleanup,
-    waitFor,
-    act,
-    getByLabelText,
-} from '@testing-library/react';
+import { render, cleanup, act } from '@testing-library/react';
 
 afterEach(cleanup);
 
@@ -31,7 +25,8 @@ test('policy details and log out button should render', async () => {
     const container = document.createElement('div');
 
     const { getByTestId } = render(<MyPolicy data={data} />, container);
-    await new Promise((r) => setTimeout(r, 2000));
+    const promise = new Promise((r) => setTimeout(r, 2000));
+    await act(() => promise);
     const policyRef = getByTestId('policy-ref');
     const policyCover = getByTestId('policy-cover');
     const car = getByTestId('car');

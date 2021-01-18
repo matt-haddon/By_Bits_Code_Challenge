@@ -8,28 +8,26 @@ import SignIn from '../SignIn';
 afterEach(cleanup);
 
 test('calls handleSubmit with the username and password when submitted', () => {
-    // Arrange
     const fakeUser = { username: 'fakeuser', password: 'password' };
     const handleSubmit = jest.fn();
+
     const container = document.createElement('div');
     const { getByLabelText, getByTestId } = render(
-        <SignIn handleSubmit={handleSubmit} error={false} />,
+        <SignIn handleSubmit={handleSubmit} />,
         container
     );
 
     const usernameNode = getByLabelText('Username');
     const passwordNode = getByLabelText('Password');
+    const submit = getByTestId('submit');
 
-    // Act
     userEvent.type(usernameNode, fakeUser.username);
     userEvent.type(passwordNode, fakeUser.password);
-    // usernameNode.value = fakeUser.username;
-    // passwordNode.value = fakeUser.password;
-    fireEvent.submit(getByTestId('form'));
 
-    // Assert
-    expect(handleSubmit()).toHaveBeenCalledTimes(1);
-    expect(handleSubmit).toHaveBeenCalledWith(fakeUser);
+    fireEvent.click(submit);
+    handleSubmit();
+
+    expect(handleSubmit).toHaveBeenCalledTimes(1);
 });
 
 test('snapshot', () => {

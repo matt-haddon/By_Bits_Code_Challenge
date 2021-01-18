@@ -17,7 +17,6 @@ const SignIn = ({ setData, error, setError }) => {
         if (username && password) {
             let res = await postUser(username, password);
             token = res.access_token;
-            console.log('SUCCESS', token);
             let result = await userPolicy(token);
             setData(result);
             history.push('/MyPolicy');
@@ -39,7 +38,7 @@ const SignIn = ({ setData, error, setError }) => {
                 <div className="formContainer">
                     <h1>Sign In</h1>
                     <div className="line"></div>
-                    <form data-testid="form" onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} id="form">
                         <TextField
                             label="Username"
                             id="username-input"
@@ -56,9 +55,10 @@ const SignIn = ({ setData, error, setError }) => {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         <Button
+                            data-testid="submit"
                             color="primary"
-                            data-testid="sign-in"
                             type="submit"
+                            id="submit"
                         >
                             Sign In
                         </Button>
