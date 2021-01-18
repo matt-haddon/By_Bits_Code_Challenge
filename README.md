@@ -6,12 +6,10 @@
 
 
 ### My Policy Page
-
 <img width='1000' src='./client/public/MyPolicy.png' />
 
-
-
 ### How to Run
+
 1) Git clone from my repo 
 2) Enter client folder -> cd client
 3) CLI command -> npm install. 🏗
@@ -30,4 +28,5 @@
 - React Testing Library and Jest for testing
 
 ### Time Spent on Project
-Approximately 4 hours
+
+Approximately 4 hours.
