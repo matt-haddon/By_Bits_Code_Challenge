@@ -1,10 +1,15 @@
 ## By Bits Code Challenge
 
-###Log In Page
+### Log In Page
+<img width='1000' src='./client/public/SignIn.png' />
 
 
 
 ### My Policy Page
+
+<img width='1000' src='./client/public/MyPolicy.png' />
+
+
 
 ### How to Run
 1) Git clone from my repo 
