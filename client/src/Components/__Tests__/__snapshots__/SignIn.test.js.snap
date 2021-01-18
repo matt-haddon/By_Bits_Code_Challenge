@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  class="sign-in"
+>
+  <section
+    class="picture"
+  >
+    <img
+      alt="login"
+      src="sun.jpg"
+    />
+  </section>
+  <section
+    class="formSection"
+  >
+    <div
+      class="formContainer"
+    >
+      <h1>
+        Sign In
+      </h1>
+      <div
+        class="line"
+      />
+      <form
+        data-testid="form"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink="false"
+            for="username-input"
+            id="username-input-label"
+          >
+            Username
+          </label>
+          <div
+            class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiInput-input"
+              id="username-input"
+              name="username"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink="false"
+            for="password-input"
+            id="password-input-label"
+          >
+            Password
+          </label>
+          <div
+            class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiInput-input"
+              id="password-input"
+              name="password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+          data-testid="sign-in"
+          tabindex="0"
+          type="submit"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Sign In
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </form>
+      <p
+        class="warning"
+      />
+    </div>
+  </section>
+</div>
+`;

@@ -1,0 +1,156 @@
+/*
+ SUMMARY
+
+1. COLORS
+2. GENERAL
+3. SIGN IN PAGE
+4. POLICY PAGE
+*/
+
+// COLORS
+
+$purple: #320b42;
+$red: #f6634a;
+$blue: #3f51b5;
+$grey: #f3f5f7;
+
+// GENERAL
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+h1 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+// SIGN IN PAGE
+
+.sign-in {
+    background-color: #320b42;
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .picture {
+        img {
+            max-height: 600px;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+    .formSection {
+        border-radius: 0 10px 10px 0;
+        min-width: 550px;
+        height: 600px;
+        background-color: white;
+        padding: 4% 2%;
+        margin-top: -4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .formContainer {
+            h1 {
+                font-size: 1.8rem;
+                color: $blue;
+                font-weight: 700;
+                margin-bottom: 3%;
+                text-align: center;
+            }
+            .line {
+                background-color: $blue;
+                height: 2px;
+                width: 20%;
+                display: block;
+                margin: 2% auto;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                display: flex;
+                flex-direction: column;
+                margin: 10% 5%;
+                justify-content: center;
+                align-items: center;
+
+                input {
+                    width: 300px;
+                }
+                button {
+                    margin-top: 10%;
+                }
+            }
+        }
+    }
+}
+
+.warning {
+    color: $red;
+    margin-top: 2%;
+}
+// POLICY PAGE
+
+.policy {
+    background-color: $grey;
+    height: 100%;
+    min-height: 100vh;
+    h1 {
+        font-size: 2.5rem;
+        background-color: $purple;
+        padding: 2%;
+        color: white;
+        text-align: center;
+    }
+    .data {
+        width: 50%;
+        margin: 3% auto;
+        div {
+            border-radius: 10px;
+            background-color: white;
+            margin: 3%;
+            padding: 4%;
+            display: flex;
+            svg {
+                font-size: 3rem;
+                margin-right: 2%;
+                path {
+                    color: $blue;
+                }
+            }
+
+            section {
+                h6 {
+                    color: $blue;
+                    font-size: 1.4rem;
+                }
+                p {
+                    margin-top: 2%;
+                }
+            }
+        }
+        button {
+            display: block;
+            margin: 4% auto;
+        }
+    }
+}
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        margin-top: 2%;
+        color: $purple;
+        font-size: 1.8rem;
+    }
+}
